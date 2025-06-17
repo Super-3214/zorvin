@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Profesional</title>
+    <!-- Rutas corregidas (sin la barra inicial, asumiendo una estructura de carpetas estándar) -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://imgs.search.brave.com/oh5PQD-nO0XdpJeWVnyXo54kuOVDZWwj1xi7vpFgxvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzExLzgyLzI1LzA1/LzM2MF9GXzExODIy/NTA1NjJfMm13UldY/UFRlVEdYWVZTQlNU/TjRjUkxnYW56SFVu/M3QuanBn" type="image/png">
+    <link rel="stylesheet" href="/script/script.js">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Zorvin</a>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><button id="theme-toggle"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hola, soy <span class="highlight">Lewis</span></h1>
+                <h2>Desarrollador Web Full Stack</h2>
+                <p>Creando experiencias digitales memorables</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contact" class="btn btn-secondary">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí (Añadida clase 'reveal' para la animación) -->
+    <section id="about" class="section reveal">
+        <div class="container">
+            <h2 class="section-title">Sobre <span>Mí</span></h2>
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="imagen/ppch.jpeg" alt="Foto de perfil">
+                </div>
+                <div class="about-text">
+                    <h3>¡Hola! Soy Lewis</h3>
+                    <p>Desarrollador web con 5 años de experiencia creando soluciones digitales innovadoras. Especializado en JavaScript, React y Node.js.</p>
+                    <p>Me apasiona construir aplicaciones web que no solo sean funcionales, sino que también ofrezcan una experiencia de usuario excepcional.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span>Nombre:</span>
+                            <p>Lewis Ferreras</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Email:</span>
+                            <p>lewisferreras3@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Experiencia:</span>
+                            <p>5+ años</p>
+                        </div>
+                        <div class="info-item">
+                            <span>País:</span>
+                            <p>Republica Dominicana</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Descargar CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades (Añadida clase 'reveal' para la animación) -->
+    <section id="skills" class="section bg-light reveal">
+        <div class="container">
+            <h2 class="section-title">Mis <span>Habilidades</span></h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 0%"></div> <!-- Inicia en 0 para animar con JS -->
+                    </div>
+                    <span class="percent">95%</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 0%"></div> <!-- Inicia en 0 para animar con JS -->
+                    </div>
+                    <span class="percent">90%</span>
+                </div>
+                <!-- Más habilidades -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos (Añadida clase 'reveal' para la animación) -->
+    <section id="projects" class="section reveal">
+        <div class="container">
+            <h2 class="section-title">Mis <span>Proyectos</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/images/project1.jpg" alt="Proyecto 1">
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Site</h3>
+                        <p>Plataforma de comercio electrónico construida con React y Node.js</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Más proyectos -->
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">Ver Todos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Vídeos (Añadida clase 'reveal' para la animación) -->
+    <section id="videos" class="section bg-light reveal">
+        <div class="container">
+            <h2 class="section-title">Mis <span>Vídeos</span></h2>
+            <div class="video-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="tutoriales">Tutoriales</button>
+                <button class="filter-btn" data-filter="proyectos">Proyectos</button>
+                <button class="filter-btn" data-filter="conferencias">Conferencias</button>
+            </div>
+            <div class="videos-grid">
+                <div class="video-card" data-category="tutoriales">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/cqMfPS8jPys?si=rIXAsQi53wVwID3j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Tutorial de React Hooks</h3>
+                        <p>Aprende a usar los hooks más importantes de React en este tutorial completo.</p>
+                        <span class="video-date">Publicado: 15/06/2023</span>
+                    </div>
+                </div>
+                <div class="video-card" data-category="proyectos">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/9YddVVsdG5A" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Desarrollo de Portafolio</h3>
+                        <p>Proceso completo de creación de un portafolio web moderno.</p>
+                        <span class="video-date">Publicado: 02/05/2023</span>
+                    </div>
+                </div>
+                <!-- Más vídeos -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto (Añadida clase 'reveal' para la animación) -->
+    <section id="contact" class="section reveal">
+        <div class="container">
+            <h2 class="section-title">Contáct<span>ame</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>lewisferreras3@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+1(809)-326-6984</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Santo Domingo, Republica Dominicana</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/projects" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/@FalconMasters" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Asunto">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Mi Portafolio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- CORRECCIÓN: Etiqueta de script movida aquí, al final del body -->
+    <script src="script/script.js"></script>
+</body>
+</html>
